@@ -13,16 +13,18 @@ attempts = 0
 
 #Create while loop
 while attempts < 10:
-    guesses_taken = attempts
-    guesses_taken = str(attempts)
     print("Guess a number")
     guess = input()
     guess = int(guess)
     attempts = attempts + 1
     if guess < secret_number:
         print("your guess is low")
-    if guess > secret_number:
+    elif guess > secret_number:
         print("your guess is high")
-    if guess == secret_number
-        print("you guessed right!")
+    elif guess == secret_number:
         break
+
+if guess == secret_number:
+    print("you guessed right!")
+if guess != secret_number:
+    print("you lose!")
